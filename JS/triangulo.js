@@ -1,4 +1,4 @@
-function main(){
+function start(){
     var n1 =45;
     var n2 =54;
     var n3 =65;
@@ -18,4 +18,4 @@ function TipoTriangulo(l1,l2,l3){
     }
 }
 
-main();
+start();
