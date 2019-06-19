@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 007</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <h3 id="res">resultado</h3>
+    <script>
+        function somar(){
+            var t1 = document.getElementById('txtn1')
+            var t2 = document.getElementById('txtn2')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var s = n1+n2
+            var res = document.getElementById('res')
+            res.innerText = 'A soma é '+s
+
+        }
+    </script>
+</body>
+</html>
