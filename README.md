@@ -1,2 +1,2 @@
 # JS-Code
-códigos feitos durante o aprendizado de JS
+Códigos feitos durante o aprendizado de JS
