@@ -4,9 +4,9 @@ Declare uma variável chamada `sum` e atribua a ela uma função chamada
 desses parâmetros.
 */
 // ?
-/*var sum = function calculateSum(x, y) {
+var sum = function calculateSum(x, y) {
     return x + y
-}*/
+}
 
 /*
 Invoque a função criada acima, passando dois números que serão somados, e mostre
@@ -14,50 +14,48 @@ o resultado no console, com a frase:
 "A soma de [VALOR 1] e [VALOR2] é igual a [RESULTADO]."
 */
 // ?
-//console.log('A soma de 6 e 9 é igual a ' + sum(6, 9))
-/*
-Mostre no console o nome da função criada acima, com a frase:
-"O nome da função que faz a soma é [NOME DA FUNÇÃO]."
-*/ // ?
-// ?
-//console.log('O nome da função que faz a soma é ' + sum.name)
+console.log('A soma de 6 e 9 é igual a ' + sum(6, 9))
+    /*
+    Mostre no console o nome da função criada acima, com a frase:
+    "O nome da função que faz a soma é [NOME DA FUNÇÃO]."
+    */ // ?
+    // ?
+console.log('O nome da função que faz a soma é ' + sum.name)
 
 /*
 Crie uma função literal chamada `showName`. Essa função deve retornar o
 seu nome.
 */
 // ?
-/*function showName(name) {
-    return console.log(name)
-}*/
+function showName() {
+    return 'Cristian';
+}
 
 /*
 Declare uma variável chamada `varShowName` que recebe a função criada acima.
 */
 // ?
-/*var ShowName = function showName(name) {
-        return name
-}*/
+var varShowName = showName;
 /*
 Usando a variável criada acima, mostre no console o nome e o retorno da função
 atribuída a ela, com a seguinte frase:
 "A função [NOME DA FUNÇÃO] retorna [RETORNO DA FUNÇÃO]."
 */
 // ?
-//console.log('A função ' + ShowName.name + ' retorna ' + ShowName('cris'))
-/*
-Crie uma função literal chamada `calculator`, que funcione assim:
-- A função deve receber um parâmetro que dirá qual operação matemática ela
-vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
-- Essa função deve retornar uma segunda função que fará o seguinte:
-  - Essa segunda função deve receber dois parâmetros;
-  - Esses dois parâmetros serão os operandos usados na operação matemática;
-  - O retorno dessa segunda função é a operação matemática completa, com a frase:
-  "Resultado da operação: [NUMERO1] [OPERADOR] [NUMERO2] = [RESULTADO]."
-  - Se o operador não for válido, retornar a frase:
-  "Operação inválida."
-*/
-// ?
+console.log('A função ' + varShowName.name + ' retorna ' + varShowName())
+    /*
+    Crie uma função literal chamada `calculator`, que funcione assim:
+    - A função deve receber um parâmetro que dirá qual operação matemática ela
+    vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
+    - Essa função deve retornar uma segunda função que fará o seguinte:
+      - Essa segunda função deve receber dois parâmetros;
+      - Esses dois parâmetros serão os operandos usados na operação matemática;
+      - O retorno dessa segunda função é a operação matemática completa, com a frase:
+      "Resultado da operação: [NUMERO1] [OPERADOR] [NUMERO2] = [RESULTADO]."
+      - Se o operador não for válido, retornar a frase:
+      "Operação inválida."
+    */
+    // ?
 
 
 function calculator(operacao) {
@@ -67,7 +65,7 @@ function calculator(operacao) {
             return function(x, y) {
                 var res = x + y;
 
-                return console.log('Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.')
+                return 'Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.'
             }
             break;
 
@@ -75,7 +73,7 @@ function calculator(operacao) {
 
             return function(x, y) {
                 var res = x - y;
-                return console.log('Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.')
+                return 'Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.'
             }
             break;
 
@@ -83,7 +81,7 @@ function calculator(operacao) {
 
             return function(x, y) {
                 var res = x * y;
-                return console.log('Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.')
+                return 'Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.'
             }
             break;
 
@@ -91,7 +89,7 @@ function calculator(operacao) {
 
             return function(x, y) {
                 var res = x / y;
-                return console.log('Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.')
+                return 'Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.'
             }
             break;
 
@@ -99,12 +97,12 @@ function calculator(operacao) {
 
             return function(x, y) {
                 var res = x % y;
-                return console.log('Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.')
+                return 'Resultado da operação: ' + x + ' ' + operacao + ' ' + y + ' = ' + res + '.'
             }
             break;
 
         default:
-            console.log('Digite um operador valido')
+            'Digite um operador valido'
             break;
     }
 }
