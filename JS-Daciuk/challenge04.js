@@ -21,6 +21,5 @@ function addPessoas(nPessoas){
         
             console.log('Só cabe mais '+carro.assentos+' pessoa(s)');
     }
-    
 }
 
