@@ -20,7 +20,6 @@ function myFunction() {
 }
 //myFunction();
 
-
 /*  
  myFunction2();
 */
