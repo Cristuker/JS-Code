@@ -49,10 +49,8 @@
     'The person has more than 25 years old? [TRUE/FALSE]'
     */
     function moreThan(idade){
-        if(person['age'] > idade){
-            return true;
-        }
-        return false;
+       
+        return person.age > idade;
     }
     console.log('The person has more than 25 years old? '+ moreThan(25))
 
@@ -62,7 +60,7 @@
     Mostre no console os números no array.
     */
     console.log( 'De 0 a 10:' );
-    var numbers= []
+    var numbers = []
     for(var i = 0; i <=20; i++){
         numbers[i] = i;
         if(i > 10){
