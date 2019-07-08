@@ -43,7 +43,7 @@
     =================================Outros metodos=====================
     Object.keys(obj) ele retorna um array com as propriedades do objeto
     obj.isPrototypeOf(ob2) = ele verifica se o parametro é um prototipo do primeiro obj e retorna um booleano
-    JSON.stringify(obj) = transforma o objeto em uma String no formato JSON
+    var str = JSON.stringify(obj) = transforma o objeto em uma String no formato JSON
     JSON.parse(str) = transforma o JSON em objeto dnv
 
 */
