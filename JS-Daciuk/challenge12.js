@@ -142,4 +142,5 @@
     Mostre todos os itens do array acima, odenados alfabéticamente.
     */
     console.log(myName.sort())
+
 })();
