@@ -118,7 +118,7 @@
 
     var myName = []
 
-    var name = 'cristian'
+    var name = 'Cristian'
 
     for (var i = 0; i < name.length; i++) {
         myName[i] = name[i]
@@ -135,7 +135,7 @@
     /*
     Ainda usando o objeto acima, mostre no console seu nome invertido.
     */
-    console.log(myName.reverse())
+    console.log(myName.reverse().join(''))
 
     console.log('\nAgora em ordem alfabética:');
     /*
