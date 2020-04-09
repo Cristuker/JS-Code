@@ -22,3 +22,10 @@ for(var prop in car){
 //=====outra forma de usar o in
 console.log('year in car?', 'year' in car)
 console.log('doors in car?', 'doors' in car)
+
+//outros tipo de loops
+
+
+for(prop in car){
+    console.log('prop: ', car[prop])
+}
