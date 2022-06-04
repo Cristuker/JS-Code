@@ -55,3 +55,23 @@ class Queue {
     }
 
 }
+
+module.exports = {
+    Queue
+}
+
+const queue = new Queue();
+
+// console.log(queue.isEmpty());
+
+// queue.enqueue('John');
+// queue.enqueue('Jack');
+// queue.enqueue('Camila');
+// console.log(queue.toString())
+// console.log(queue.size());
+// console.log(queue.isEmpty());
+
+// queue.dequeue();
+// console.log(queue.toString());
+// queue.dequeue();
+// console.log(queue.toString());
